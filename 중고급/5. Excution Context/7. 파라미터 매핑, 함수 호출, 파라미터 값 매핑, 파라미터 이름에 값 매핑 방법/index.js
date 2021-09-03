@@ -8,7 +8,7 @@
  *    - 함수를 호출한 오브젝트
  *    - 함수 코드
  *    - 호출한 함수의 파라미터 값
- * - 함수르 호출한 오브젝트를
+ * - 함수를 호출한 오브젝트를
  *    - this 바인딩 컴포넌트에 설정하여 this로 참조
  * - 함수 코드
  *    - function 오브젝트의 [[Code]]에 설정되어 있음
@@ -49,7 +49,7 @@
  */
 console.log("[코드1] 파라미터 값 매핑");
 var obj = {};
-obj.getTotal = function(one, two) {
+obj.getTotal = function (one, two) {
   return one + two;
 };
 console.log(obj.getTotal(11, 22, 77));  // 33
