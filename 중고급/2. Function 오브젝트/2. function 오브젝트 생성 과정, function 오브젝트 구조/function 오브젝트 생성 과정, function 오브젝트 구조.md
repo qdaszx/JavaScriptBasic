@@ -66,7 +66,7 @@ sports = {
 
 \_\_proto\_\_ value를 Object.prototype으로 설정합니다.
 
-sports 오브젝트에 proto 오브젝트를 첨합니다.
+sports 오브젝트에 proto 오브젝트를 첨부합니다.
 
 빌트인 Function.prototype의 메소드로 function 인스턴스를 생성해서 sports.\_\_proto\_\_에 첨부합니다.
 
