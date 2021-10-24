@@ -1,2 +1,5 @@
-# JavaScriptBasic
+# JavaScript Basic
+
 자바스크립트 기본을 연습합니다.🎈
+
+자바스크립트를 이용해서 간단한 게임도 만들어 봅니다.
