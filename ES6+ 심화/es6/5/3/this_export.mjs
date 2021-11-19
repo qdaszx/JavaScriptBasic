@@ -1,0 +1,1 @@
+export const point = { value: "초깃값" };
