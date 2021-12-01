@@ -55,6 +55,7 @@ const onClickCalculator = () => {
 const onClickClear = () => {
   result.value = "";
   operator.value = "";
+  tempOperator = "";
   leftNumber = "";
   rightNumber = "";
 }
