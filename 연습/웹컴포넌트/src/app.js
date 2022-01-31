@@ -1,7 +1,7 @@
-import Component from "./core/Component";
-import Items from "./components/Items";
-import ItemAppender from "./components/ItemAppender"
-import ItemFilter from "./components/ItemFilter"
+import Component from "./core/Component.js"
+import Items from "./components/Items.js"
+import ItemAppender from "./components/ItemAppender.js"
+import ItemFilter from "./components/ItemFilter.js"
 
 export default class App extends Component {
 
@@ -85,5 +85,4 @@ export default class App extends Component {
   filterItem(isFilter) {
     this.setState({ isFilter });
   }
-
-} 
+}

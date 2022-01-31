@@ -9,7 +9,8 @@ export default class Items extends Component {
         ${filteredItems.map(({ contents, active, seq }) => `
           <li data-seq="${seq}">
             ${contents}
-            <button class="toggleBtn" style="color: ${active ? '#09F' : "#F09"}>
+            <button class="toggleBtn" style="color: ${active ? '#09F' : '#F09'}">
+              ${active ? '활성' : '비활성'}
             </button>
             <button class="deleteBtn">삭제</button>
           </li>

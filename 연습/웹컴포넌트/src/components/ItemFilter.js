@@ -1,4 +1,4 @@
-import Component from "../core/Component";
+import Component from "../core/Component.js"
 
 export default class ItemFilter extends Component {
 
@@ -12,7 +12,7 @@ export default class ItemFilter extends Component {
 
   setEvent() {
     const { filterItem } = this.$props
-    this.addEvent('click', 'filterBtn', ({ target }) => {
+    this.addEvent('click', '.filterBtn', ({ target }) => {
       filterItem(Number(target.dataset.isFilter))
     })
   }
