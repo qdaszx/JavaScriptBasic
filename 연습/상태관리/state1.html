@@ -17,22 +17,22 @@
     };
 
     const stateKeys = Object.keys(state);
+    const observer = () => console.log(`a + b = ${state.a + state.b}`);
 
     for (const key of stateKeys) {
       let _value = state[key];
       Object.defineProperty(state, key, {
         get() {
-          console.log(`현재 state.${key}의 값은 ${_value} 입니다.`);
           return _value;
         },
         set(value) {
           _value = value;
-          console.log(`변경된 state.${key}의 값은 ${_value} 입니다.`);
+          observer();
         }
       })
     }
 
-    console.log(`a + b = ${state.a + state.b}`)
+    observer();
 
     state.a = 100;
     state.b = 200;
