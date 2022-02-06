@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>가상돔 구성</title>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script>
+    function h(type, props, ...children) {
+      return { type, props, children }
+    }
+
+    const vm = (
+      h('div', { id: 'app' },
+        h('ul', null,
+          h('li', null,
+            h('input', { type: 'checkbox', className: 'toggle' }),
+            'todo list item 1',
+            h('button', { className: 'remove' }, '삭제')
+          ),
+          h('li', { className: 'completed' },
+            h('input', { type: 'checkbox', className: 'toggle', check: true }),
+            'todo list item 2',
+            h('button', { className: 'remove' }, '삭제')
+          ),
+        ),
+        h('form',
+          h('input', { type: 'text' }),
+          h('button', { type: 'submit' }, '추가'),
+        )
+      )
+    );
+
+    const $root = document.body.querySelector('#root');
+
+    $root.innerHTML = `
+      <pre>${JSON.stringify(vm, null, 2)}</pre>
+    `
+  </script>
+</body>
+
+</html>
