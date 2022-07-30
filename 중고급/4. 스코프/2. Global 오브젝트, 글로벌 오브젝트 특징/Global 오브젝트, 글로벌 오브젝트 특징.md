@@ -31,7 +31,7 @@ var value2 = 100;
 function book2() {
   return value + 50;
 }
-// <script src="./abc.js">
+// <script src="./def.js">
 console.log(value2); // 100
 console.log(book2()); // 150
 ```
